@@ -33,17 +33,19 @@ import com.sap.sl.sdk.authoring.datafoundation.SQLJoin;
 public class DataFoundationExtractor {
 
     // ==== FILL THESE IN ====
-    private static final String CMS_SERVER = "cms:6400"; // host:port for Enterprise session (not the RESTful 6405 port)
-    private static final String CMS_USER = "administrator";
-    private static final String CMS_PASS = "password";
+    // NOTE: Do not hardcode real credentials here. Prefer environment variables,
+    // a properties file excluded via .gitignore, or a secrets manager.
+    private static final String CMS_SERVER = "<CMS_HOST>:6400"; // host:port for Enterprise session (not the RESTful 6405 port)
+    private static final String CMS_USER = "<CMS_USER>";
+    private static final String CMS_PASS = "<CMS_PASSWORD>";
     private static final String CMS_AUTH = "secEnterprise";
 
     // Path of the universe within the "Universes" root folder in the CMS repository.
-    // Example: "/myCmsFolder/MyUniverse.unx"
-    private static final String UNIVERSE_REPOSITORY_PATH = "/Universes/Univers/Fam/test.unx";
+    // Example: "/Universes/MyFolder/MyUniverse.unx"
+    private static final String UNIVERSE_REPOSITORY_PATH = "<REPOSITORY_PATH_TO_UNX>";
 
     // Local folder where the .blx/.cns/.dfx resources will be downloaded.
-    private static final String TARGET_FOLDER = "D:\\client";
+    private static final String TARGET_FOLDER = "C:\\Workspace";
     // ========================
 
     public static void main(String[] args) throws Exception {
