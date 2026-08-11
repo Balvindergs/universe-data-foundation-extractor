@@ -42,7 +42,7 @@ public class DataFoundationExtractor {
 
     // Path of the universe within the "Universes" root folder in the CMS repository.
     // Example: "/Universes/MyFolder/MyUniverse.unx"
-    private static final String UNIVERSE_REPOSITORY_PATH = "<REPOSITORY_PATH_TO_UNX>";
+    private static final String UNIVERSE_REPOSITORY_PATH = "<REPOSITORY_PATH_TO_UNX>"; // for example the path of universe "/Universes/Univers/Familie/Universename.unx";
 
     // Local folder where the .blx/.cns/.dfx resources will be downloaded.
     private static final String TARGET_FOLDER = "D:\\Workspace";
