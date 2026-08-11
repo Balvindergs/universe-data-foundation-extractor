@@ -45,7 +45,7 @@ public class DataFoundationExtractor {
     private static final String UNIVERSE_REPOSITORY_PATH = "<REPOSITORY_PATH_TO_UNX>";
 
     // Local folder where the .blx/.cns/.dfx resources will be downloaded.
-    private static final String TARGET_FOLDER = "C:\\Workspace";
+    private static final String TARGET_FOLDER = "D:\\Workspace";
     // ========================
 
     public static void main(String[] args) throws Exception {
